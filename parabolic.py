@@ -28,3 +28,9 @@ def parabolic(f, a, b, eps=0.000001):
     x_min, f_min = x1, f(x1)
     return x_min, f_min, cnt
 
+
+def f(x):
+    return math.log(x) * math.sin(x) * x ** 2
+
+
+print(parabolic(f, 0.5, 1, 0.000001))
